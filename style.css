@@ -1,0 +1,73 @@
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding:0; margin: 0; background-color: var(--white-color);
+}
+:root{
+    --primary-color: #303f8c;
+    --secondary-color: #96d9f1;
+    --accent-color: #94da8b;
+    --white-color: white;
+    --gray-color: #f0f0f0;
+
+    /*Size variables*/
+    --font-size-large: 1.5em;
+    --font-size-medium: 1.2em;
+    --border-radius: 10px;
+
+    --transition-time: 0.3s;
+}
+
+.horizontal{display: flex; flex-direction: row; gap: 20px; align-items: center;}
+.vertical{display: flex; flex-direction: column; gap: 20px; align-items: center;}
+.right{margin-left:auto; width: 100%;}
+.shadow{box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
+
+header{
+    display: flex; align-items: center;
+    gap: 20px; padding: 30px; background-color: var(--primary-color);
+}
+header img{width: 50px; height: 50px;}
+header a{text-decoration:none; font-size: var(--font-size-large); font-weight: bold; margin: 0; color:var(--white-color);}
+.navbarLink{
+    text-decoration: none; font-size: var(--font-size-medium); color: black; 
+    font-weight: bold; margin-left:auto; transition: color var(--transition-time) ease;
+}
+.navbarLink:hover{color: var(--accent-color);}
+.logInBtn{
+    padding: 10px 20px; background-color: var(--accent-color); border: none; border-radius: var(--border-radius);
+    color: var(--white-color); font-weight: bold; cursor: pointer; font-size: var(--font-size-medium);
+    transition: background-color var(--transition-time) ease, color var(--transition-time) ease;
+}
+.logInBtn:hover{background-color: var(--secondary-color); color: var(--primary-color);}
+
+.borderDiv{
+    border-radius:var(--border-radius); border: 2px solid var(--gray-color); 
+    padding: 20px; margin: 20px auto; max-width:80%;
+}
+.colorBackground{background-color: var(--accent-color);}
+h1{text-align: center; margin-top: 40px;}
+.textContainer{
+    margin: 0 auto; width:80%; border-radius: var(--border-radius); padding: 20px;
+    display:flex; flex-direction: row; gap: 20px; align-items: center;
+}
+.textContainer p{font-size: var(--font-size-medium); line-height: 1.5;}
+.studentsPic{display: block; margin: 20px auto; max-height:200px; border-radius: var(--border-radius);
+}
+
+#stats{
+    display: flex; justify-content: space-around; align-items: center;
+    padding: 40px 20px; background-color: var(--secondary-color); color:var(--primary-color)
+}
+#stats1, #stats2, #stats3{
+    text-align: center; border-radius: var(--border-radius); 
+    padding: 20px; width:30%;
+}
+
+footer{
+    padding: 50px; margin-top: 40px; text-align:center;
+    background-color: var(--primary-color); color: var(--white-color);
+}
+footer p{font-weight:bolder;}
+footer div{display: flex; gap: 20px; align-self:center; justify-content: center;}
+footer a{text-decoration: none; color: var(--white-color);}
+footer a:hover{color: var(--accent-color);}
