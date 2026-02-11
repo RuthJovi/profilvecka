@@ -1,10 +1,8 @@
 
-/* --- Animation Styles --- */
 html {
   scroll-behavior: smooth;
 }
 
-/* Base class for elements that will be revealed */
 .reveal {
   opacity: 0;
   transform: translateY(30px);
@@ -12,17 +10,14 @@ html {
   will-change: transform, opacity;
 }
 
-/* Active class triggered by JavaScript */
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* Staggered delay for list items or grid cards */
 .reveal:nth-child(2) { transition-delay: 0.1s; }
 .reveal:nth-child(3) { transition-delay: 0.2s; }
 
-/* ... (Keep all your existing CSS from before below this) ... */
 :root {
   --primary-color: #303f8c;
   --primary-dark: #242f6a;
