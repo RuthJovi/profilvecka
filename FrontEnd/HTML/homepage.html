@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarity | Modern Learning</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <header>
+        <a href="homepage.html" class="logo">Clarity</a>
+        <nav class="nav-links">
+            <a href="forumsExplore.html">Forums</a>
+            <a href="auth.html" class="btn-primary">Sign In</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="reveal">Learning, simplified.</h1>
+        
+        <div class="card reveal">
+            <div>
+                <h3>Our Mission</h3>
+                <p>Improve your study technique and grow your confidence. Join thousands of students achieving their goals today.</p>
+            </div>
+            <img class="studentsPic" src="https://i.pinimg.com/1200x/2a/2d/21/2a2d2176f882c951d9efebc82b8412b8.jpg" alt="students">
+        </div>
+
+        <section class="card horizontal reveal">
+           <img class="studentsPic" src="https://i.pinimg.com/1200x/92/e0/76/92e07603f43eff97af0414a41dda8e3c.jpg" alt="students studying">
+           <div class="textContainer">
+               <p>In our forums you can get help from other students, teachers and experts...</p>
+           </div>
+       </section>
+       
+        <div class="card reveal" style="background: var(--accent); color: var(--primary);">
+            <div style="text-align: center; width: 100%;">
+                <h2>Ready to start?</h2>
+                <p>Browse our peer-to-peer forums and get help instantly.</p>
+                <br>
+                <a href="forumsExplore.html" class="btn-primary">Explore Forums</a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Clarity Platform</p>
+        <p><a href="#">Privacy</a> | <a href="#">Terms</a></p>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

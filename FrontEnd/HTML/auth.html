@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Clarity | Modern Learning</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="homepage.html" class="logo">Clarity</a>
+        <nav class="nav-links">
+            <a href="forumsExplore.html">Forums</a>
+            <a href="auth.html" class="btn-primary">Sign In</a>
+        </nav>
+    </header>
+
+    <div class="container section-padding"
+        style="display: flex; justify-content: center; align-items: center; min-height: 75vh;">
+
+        <div class="card reveal active" id="auth-card"
+            style="max-width: 450px; width: 100%; flex-direction: column; text-align: center;">
+            <div id="auth-icon" style="font-size: 3rem; margin-bottom: 1rem;">👋</div>
+            <h2 id="auth-title" style="margin-bottom: 0.5rem; color: var(--primary);">Welcome Back</h2>
+            <p id="auth-subtitle" style="color: var(--text-muted); margin-bottom: 2rem;">Sign in to access your student
+                community.</p>
+
+            <form id="auth-form" style="display: flex; flex-direction: column; gap: 15px; width: 100%;">
+                <div class="search-input-group" style="padding-left: 15px;">
+                    <input type="text" id="username" placeholder="Username (Try: Bret)" required>
+                </div>
+                <div class="search-input-group" style="padding-left: 15px;">
+                    <input type="email" id="email" placeholder="Email Address" required>
+                </div>
+                <button type="submit" class="btn btn-primary"
+                    style="width: 100%; padding: 14px; font-size: 1rem;">Continue</button>
+            </form>
+
+            <p style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--text-muted);">
+                <span id="toggle-text">Don't have an account?</span>
+                <a href="#" id="auth-toggle"
+                    style="color: var(--primary); font-weight: 600; text-decoration: none; margin-left: 5px;">Create
+                    one</a>
+            </p>
+        </div>
+
+        <div class="card reveal" id="success-card"
+            style="display: none; max-width: 450px; width: 100%; flex-direction: column; text-align: center;">
+            <div style="font-size: 4rem; margin-bottom: 1rem;">🎉</div>
+            <h2 id="welcome-name" style="color: var(--primary);">Success!</h2>
+            <p style="color: var(--text-muted); margin-bottom: 2rem;">You are now logged into your Clarity account.</p>
+            <a href="homepage.html" class="btn btn-primary" style="width: 100%;">Go to Dashboard</a>
+        </div>
+    </div>
+
+    <script src="../JS/auth.js"></script>
+
+</body>
+
+</html>

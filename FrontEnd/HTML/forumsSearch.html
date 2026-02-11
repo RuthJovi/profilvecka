@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results | Clarity</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <header>
+        <a href="homepage.html" class="logo">Clarity</a>
+        <nav class="nav-links">
+            <a href="forumsExplore.html">Forums</a>
+            <a href="auth.html" class="btn-primary">Sign In</a>
+        </nav>
+    </header>
+
+    <div class="container section-padding">
+        <h1 class="reveal">Search Results</h1>
+        <p class="subtitle reveal" id="search-query-text">Looking for discussions...</p>
+
+        <div class="">
+            <form action="forumsSearch.html" class="search-wrapper">
+                <div class="search-input-group">
+                    <span class="search-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                    </span>
+                    <input type="search" name="q" id="search-input" placeholder="Search again..." required />
+                </div>
+                <button type="submit" class="btn btn-primary">New Search</button>
+            </form>
+        </div>
+
+        <div id="results-container" class="section-padding">
+            <div class="card " style="text-align: center; border-style: dashed; background: transparent;">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">🔍</div>
+                <h3>No results found</h3>
+                <p>We couldn't find any forums matching that keyword. Try searching for something broader like "Math" or "Study".</p>
+                <br>
+                <a href="forumsExplore.html" class="btn btn-outline">Browse all categories</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Clarity Platform</p>
+            <div class="links">
+                <a href="#">Privacy</a> | <a href="#">Terms</a> | <a href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Logic to show what the user actually searched for
+        const urlParams = new URLSearchParams(window.location.search);
+        const query = urlParams.get('q');
+        if (query) {
+            document.getElementById('search-query-text').innerText = `Displaying results for "${query}"`;
+            document.getElementById('search-input').value = query;
+        }
+    </script>
+</body>
+</html>
