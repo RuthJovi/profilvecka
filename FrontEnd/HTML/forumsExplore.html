@@ -9,7 +9,7 @@
 
 <body>
     <header>
-        <a href="homepage.html" class="logo">Clarity</a>
+        <a href="../../index.html" class="logo">Clarity</a>
         <nav class="nav-links">
             <a href="forumsExplore.html">Forums</a>
             <a href="auth.html" class="btn-primary">Sign In</a>
@@ -17,20 +17,71 @@
     </header>
 
     <div class="container section-padding">
-    <h1 class="reveal">Find Your Community</h1>
-    
-    <div class="reveal no-delay">
-        <form action="forumsSearch.html" class="search-wrapper">
-            <div class="search-input-group">
-                <span class="search-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-                </span>
-                <input type="search" name="q" placeholder="Search for topics..." required />
+        <h1>Find Your Community</h1>
+
+        <div>
+            <form action="forumsSearch.html" class="search-wrapper">
+                <div class="search-input-group">
+                    <span class="search-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="m21 21-4.3-4.3" />
+                        </svg>
+                    </span>
+                    <input type="search" name="q" placeholder="Search for topics..." required />
+                </div>
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+        </div>
+
+        <div style="margin-top: 4rem;">
+            <h2 style="text-align: center; color: var(--primary); margin-bottom: 2rem;">You may need these forums
+            </h2>
+
+            <div class="forums-grid">
+                <div class="forum-mini-card">
+                    <div class="forum-header">
+                        <span class="forum-tag">Mathematics</span>
+                        <span class="forum-stats">4.2k messages</span>
+                    </div>
+                    <h3>Advanced Calculus</h3>
+                    <p>Discussing derivatives, integrals, and limits for college-level math students.</p>
+                    <div class="forum-footer">
+                        <span>Active 2m ago</span>
+                        <a href="#" class="btn-text">Join →</a>
+                    </div>
+                </div>
+
+                <div class="forum-mini-card">
+                    <div class="forum-header">
+                        <span class="forum-tag">Science</span>
+                        <span class="forum-stats">1.8k messages</span>
+                    </div>
+                    <h3>Organic Chemistry</h3>
+                    <p>A place to share study guides for molecular structures and reaction mechanisms.</p>
+                    <div class="forum-footer">
+                        <span>Active 15m ago</span>
+                        <a href="#" class="btn-text">Join →</a>
+                    </div>
+                </div>
+
+                <div class="forum-mini-card">
+                    <div class="forum-header">
+                        <span class="forum-tag" style="background: #e0e7ff;">English</span>
+                        <span class="forum-stats">850 messages</span>
+                    </div>
+                    <h3>Essay Review</h3>
+                    <p>Get feedback on your thesis statements and academic writing style.</p>
+                    <div class="forum-footer">
+                        <span>Active 1h ago</span>
+                        <a href="#" class="btn-text">Join →</a>
+                    </div>
+                </div>
             </div>
-            <button type="submit" class="btn btn-primary">Search</button>
-        </form>
+        </div>
     </div>
-</div>
+    
 
     <script src="script.js"></script>
 </body>
